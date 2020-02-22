@@ -6,7 +6,9 @@
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
-
+function consume(a, b, cb) {
+  return cb(a, b);
+}
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -27,6 +29,7 @@
 
 // Explanation: 
 
+//you can pull global functions into your variable to close of your variable. creates outer function scope into the inner side.
 
 const external = "I'm outside the function";
 
